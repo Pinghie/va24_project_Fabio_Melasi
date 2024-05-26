@@ -160,7 +160,7 @@ function createLineChart(data) {
             return this.getTotalLength();
         })
         .transition()
-        .duration(1500)
+        .duration(500)
         .ease(d3.easeLinear)
         .attr("stroke-dashoffset", 0);
 
@@ -208,8 +208,8 @@ function createLineChart(data) {
         .selectAll("text")
         .attr("transform", "rotate(-90)")
         .attr("text-anchor", "end")
-        .attr("x", -10) // Adjust the position if needed
-        .attr("y", -15) // Adjust the position if needed
+        .attr("x", -10)
+        .attr("y", -15)
         .style("font-size", 12)
         .style("letter-spacing", "1px");
 
